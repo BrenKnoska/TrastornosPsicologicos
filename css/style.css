@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-color: #86b8dd;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(51, 46, 46);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  line-height: 1.6;
+}
+
+/* Texto Negrita */
+strong {
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px 1px white;
+}
+
+/* Título principal */
+.Titulo {
+  background-color: rgba(176, 218, 247, 0.67);
+  text-align: center;
+  letter-spacing: 3px;
+  color: whitesmoke;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+  padding: 1rem 0;
+}
+
+/* Barra de navegación */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 20px 7% 0 20%;
+  padding: 0;
+  font-size: 1rem;
+  letter-spacing: 1px;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-shadow: 1px 1px 2px rgb(0, 0, 0);
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav a:hover {
+  color: rgb(255, 255, 255);
+  text-shadow: 2px 1px 2px rgba(6, 75, 85, 0.48);
+}
+
+/* Secciones generales */
+.primerSeccion,
+.segundaSeccion,
+.terceraSeccion,
+.cuartaSeccion,
+.quintaSeccion {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  padding: 5%;
+  background-color: rgba(254, 254, 255, 0.74);
+  border-radius: 1%;
+  box-shadow: 15px 2px 3px 8px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 15px 2px 3px 8px rgba(0, 0, 0, 0.6);
+  -moz-box-shadow: 15px 2px 3px 8px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 2px 1px rgb(146, 181, 248);
+  font-size: 16px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ajustes para cada sección */
+.primerSeccion,
+.segundaSeccion {
+  font-size: 15px;
+}
+
+.segundaSeccion,
+.cuartaSeccion {
+  margin-top: 5%;
+}
+
+.terceraSeccion,
+.cuartaSeccion,
+.quintaSeccion {
+  font-size: 20px;
+}
+
+/* Clase para texto */
+.Texto {
+  font-size: 16px;
+  color: rgb(51, 46, 46);
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+}
+
+/* Párrafos */
+p {
+  margin-bottom: 1rem;
+}
+
+/* Títulos secundarios */
+h2 {
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+  color: #003366;
+  text-shadow: none;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: #003366;
+  text-shadow: none;
+}
+
+/* Listados */
+ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+  list-style-type: disc;
+  color: #222;
+  line-height: 1.5;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Imágenes de fondo */
+.imagenUno {
+  background-image: url("Imagenes/Cerebro Engranaje.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+}
+
+.imagenDos {
+  background-image: url("Imagenes/pensamiento.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.imagenTres {
+  position: relative;
+  background-image: url("Imagenes/Cerebro.jpg");
+  background-size: cover;
+  background-position: center;
+  min-height: 300px;
+  border-radius: 8px;
+  overflow: hidden;
+  color: white;
+}
+
+.imagenTres::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.imagenTres img {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Footer */
+.footerLista {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  background-color: rgba(231, 231, 245, 0.235);
+  white-space: nowrap;
+  text-shadow: 2px 1px 1px rgb(255, 255, 255);
+}
+
+/* Foto personal */
+.fotoPersonal {
+  margin-left: 5%;
+    list-style: none;
+  }
+}
+
+/* Botones */
+button {
+  background-color: #77cbff;
+  border: none;
+  border-radius: 10%;
+  width: 180px;
+  padding: 0.5rem 1rem;
+  box-shadow: 2px 2px 4px rgb(106, 238, 234);
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5bb0e6;
+}
+
+/* Anclas */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+
+
